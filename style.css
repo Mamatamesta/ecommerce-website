@@ -59,7 +59,7 @@ header {
  	color: white;
  	
  }
- @media only screen and(max-width: 320px){
+ @media only screen and(max-width: 575px){
  	  .logo img{
           width: 100%;
           height: 27px;
@@ -112,9 +112,9 @@ section{
 button i {
 	padding-left: 8px;
 }
-/*.right-img {
+.right-img {
 	width: 100%;
-}*/
+}
 
 .right-img img {
 	width: 100%;
@@ -125,7 +125,7 @@ button i {
 .right-img img:hover {
 	transform: scale(1.1);
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 575px){
 	.flex{
 		display: block;
 		text-align: center;
@@ -136,8 +136,18 @@ button i {
 	}
 	section{
 		height: auto;
-		/*background: #e9dddd;*/
+		background: #e9dddd;
 	}
+	.right-img{
+		width: 65%;
+		margin: auto;
+		margin-top: 20px;
+	}
+	.right-img img {
+		height: 270px;
+
+	}
+
 	.right-img img:hover{
 		transform: none;
 	}
@@ -159,37 +169,42 @@ button i {
 }
 .image {
 	width: 20%;
-
+    margin: 25px;
 }
 
 .image img {
 	transition: 0.6s;
 	width: 100%;
 	height: 50vh;
-	padding-left: 30px;
+	
 }
 .image img:hover{
 	transform: scale3d(0.2, 0.0, 0.2);
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 575px){
 	.img-flex{
 		display: block;
 		padding-top: 30px;
 	}
 	
-	.image img:hover{
+	/*.image img:hover{
 		transform: none;
 
-	}
+	}*/
 	.section3 {
 		height: auto;
 
 	}
-	.image img{
-		margin-bottom: 10px;
-	}
+	
 	.image{
-		width: 92%;
+		width: 65%;
+		margin: auto;
+		margin-bottom: 20px;
+
+	}
+	.image img{
+		width: 100%;
+	    height: 50vh;
 	}
 }
 
@@ -259,7 +274,7 @@ button i {
 	color: grey;
 	padding-top: 5px;
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 575px){
 	.four-flex {
 		display: block;
 	}
@@ -267,7 +282,7 @@ button i {
 		height: auto;
 	}
 	.products-img{
-		width: 70%;
+		width: 55%;
 		margin: auto;
 	}
 	.products-img img {
@@ -275,6 +290,9 @@ button i {
 	}
 	.products-img{
 		text-align: center;
+	}
+	.products h1{
+		padding-top: 7px;
 	}
 }
 /*---sect-five---
@@ -302,9 +320,9 @@ button i {
  .lat-pdroducts h1:hover::after{
 	width: 10%;
 }
-@media only screen and(max-width: 320px){
+/*@media only screen and(max-width: 575px){
 
-}
+}*/
 
 /*<!--  ----sec-six---- -->
 */
@@ -340,6 +358,7 @@ button i {
 	padding-bottom: 40px;
 	font-size: 15px;
 }
+
 .buynow button{
 	color: white;
 	background: orangered;
@@ -354,7 +373,7 @@ button i {
 	color: black;
 	background: #0a3d62;
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 575px){
 	.watch-cont{
 		display: block;
 	}
@@ -373,8 +392,9 @@ button i {
 	}
 	.para-cont p{
 		margin: 15px;
-		padding-bottom: ;
+		padding-bottom: 10px;
 	}
+	
 }
 /*---sec-seven---*/
 .section-seven{
@@ -470,24 +490,28 @@ button i {
 	height: 100px;
 
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 575px){
 	.three-hover{
 		display: block;
-        height: auto;
+        
 	}
 	.section-seven{
 		height: auto;
 	}
 	.fir-hover{
 		width: 280px;
-		margin-bottom: 20px;
+		margin: auto;
+		margin-bottom: 35px;
 	}
 	.sec-hover{
 		width: 280px;
-		margin-bottom: 20px;
+		margin: auto;
+		margin-bottom: 35px;
 	}
 	.thir-hover{
 		width: 280px;
+		margin: auto;
+		margin-bottom: 35px;
 	}
 	.logo-flex{
 		display: block;
@@ -577,7 +601,7 @@ footer{
 	text-align: center;
 	padding: 25px 0px;
 }
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 575px){
 	.footer-flex{
 		display: block;
 	}
