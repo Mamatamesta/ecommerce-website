@@ -12,6 +12,7 @@ header {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin: 0px 80px;
 }
 .logo {
 	
@@ -34,12 +35,12 @@ header {
  		transform: scale(1.1);
  	}
  }
-
+   
   .menu-item a{
   	color: white;
-  	font-size: 20px;
+  	margin: 7px;
   	text-decoration: none;
-  	padding: 0px 10px;
+  	font-size: 20px;
   	
   	
   }
@@ -49,26 +50,41 @@ header {
   	transition: 1.5s;
   }
  
- .menu-item i {
+ .heart-ico i {
  	color: red;
  	font-size: 30px;
  	transition: 0.5s;
  	
  }
- .menu-item i:hover {
+ .heart-ico i:hover {
  	color: white;
  	
  }
- @media only screen and(max-width: 575px){
- 	  .logo img{
+@media only screen and (max-width: 575px){
+      .logo img{
           width: 100%;
           height: 27px;
  	  }
  	 .logo {
  	  	width: 40%;
- 	  	margin: -6px 10px;
+ 	  	margin: 8px 10px;
  	  }
- }
+ 	  .menu-item a{
+  	    font-size: 16px;
+  }
+ 	.logobar-flex{
+ 		margin: 0px;
+ 	} 
+ 	.heart-ico i{
+ 		margin-right: 8px;
+ 	} 
+}
+@media only screen and (max-width: 768px){
+          .logobar-flex{
+          	margin: 0px;
+          }
+}
+
 /* ----next sec---*/
 section{
 	background: #ffffff;
@@ -136,7 +152,7 @@ button i {
 	}
 	section{
 		height: auto;
-		background: #e9dddd;
+		/*background: #e9dddd;*/
 	}
 	.right-img{
 		width: 65%;
@@ -153,7 +169,15 @@ button i {
 	}
 	
 }
+@media only screen and (max-width: 768px){
+	.left-cont{
+		margin: 12px;
+	}
 
+
+}
+
+ 
 /*---sec-three---
 */
 .section3 {
@@ -207,6 +231,19 @@ button i {
 	    height: 50vh;
 	}
 }
+@media only screen and (max-width: 768px){
+	/*.image {
+		width: 30%;
+	}*/
+	/*.image img {
+		height: 80vh;
+	}*/
+	.section3{
+		height: auto;
+	}
+
+}
+
 
 
 /*---section-four---*/
@@ -277,6 +314,7 @@ button i {
 @media only screen and (max-width: 575px){
 	.four-flex {
 		display: block;
+		margin-top: 15px;
 	}
 	.section4{
 		height: auto;
@@ -286,7 +324,7 @@ button i {
 		margin: auto;
 	}
 	.products-img img {
-		height: 80vh;
+		height: 55vh;
 	}
 	.products-img{
 		text-align: center;
@@ -294,6 +332,16 @@ button i {
 	.products h1{
 		padding-top: 7px;
 	}
+}
+@media only screen and (max-width: 768px){
+	
+	.products-img img{
+         height: 70vh;
+	}
+	.section4{
+		height: auto;
+	}
+
 }
 /*---sect-five---
 */
@@ -337,10 +385,14 @@ button i {
 	align-items: center;
 	padding-top: 120px;
 }
+.smart-wacth{
+	width: 40%;
+	padding: 0px 45px;
+}
 .smart-wacth img{
        width: 100%;
-       height: 300px;
-       padding-right: 70px;
+       height: 320px;
+       
 }
 .three-cont {
 	margin-top: -30px;
@@ -380,9 +432,10 @@ button i {
 	.watch-cont{
 		padding-top: 45px;
 	}
-	.smart-wacth img{
-		padding-right: 0px;
+	.smart-wacth {
+		width: 95%;
 	}
+	
 	.sec-six {
 		height: auto;
 	}
@@ -396,22 +449,25 @@ button i {
 	}
 	
 }
+@media only screen and (max-width: 768px){
+	.sec-six{
+		height: auto;
+	}
+}
 /*---sec-seven---*/
 .section-seven{
 	width: 100%;
 	height: 650px;
-	background: /*bisque*/#ffffff;
+	background: bisque /*#ffffff*/;
 }
 .three-hover {
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	padding-top: 20px;
-	/*height: 345px;*/
+	
 	
 }
-
-
 .fir-hover {
 	background: beige;
     width: 20%;
@@ -491,35 +547,82 @@ button i {
 
 }
 @media only screen and (max-width: 575px){
-	.three-hover{
-		display: block;
-        
-	}
-	.section-seven{
-		height: auto;
-	}
+              .three-hover{
+              	display: block;
+              }
+              .section-seven{
+              	  height: auto;
+              }
+              .logo-flex{
+              	display: block;
+              }
+              .five-img{
+              	margin: auto;
+              	width: 75%;
+              	
+              }
+              .five-img img{
+                   margin-bottom: 10px;
+              }
+              .fir-hover{
+                  margin: auto;
+                  width: 50%;
+                  height: 326px;
+                  margin-bottom: 30px;
+
+              }
+              .fir-hover:hover{
+              	transform: none;
+              }
+              .sec-hover{
+                  margin: auto;
+                  width: 50%;
+                  height: 326px;
+                  margin-bottom: 30px;
+              }
+              .sec-hover:hover{
+              	transform: none;
+              }
+              .thir-hover{
+                  margin: auto;
+                  width: 50%;
+                  height: 326px;
+
+              }
+              .thir-hover:hover{
+              	transform: none;
+              }
+
+
+}
+
+@media only screen and (max-width: 768px){
 	.fir-hover{
-		width: 280px;
-		margin: auto;
-		margin-bottom: 35px;
+		width: 50%;
+		height: 343px;
 	}
 	.sec-hover{
-		width: 280px;
-		margin: auto;
-		margin-bottom: 35px;
+		width: 50%;
+		height: 343px;
 	}
 	.thir-hover{
-		width: 280px;
-		margin: auto;
-		margin-bottom: 35px;
+		width: 50%;
+		height: 343px;
 	}
-	.logo-flex{
-		display: block;
+}
+@media only screen and (max-width: 320px){
+	.fir-hover{
+		   width: 85%;
+           height: 325px;
 	}
-	.five-img{
-		margin: auto;
+	.sec-hover{
+		width: 85%;
+		height: 325px;
 	}
-	
+	.thir-hover{
+		width: 85%;
+		height: 325px;
+	}
 }
 /*----footer---*/
 footer{
