@@ -588,18 +588,18 @@ button i {
 		height: 343px;
 	}
 }
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 320px){
 	.fir-hover{
 		   width: 70%;
-           height: 325px;
+           height: 335px;
 	}
 	.sec-hover{
 		width: 70%;
-		height: 325px;
+		height: 335px;
 	}
 	.thir-hover{
 		width: 70%;
-		height: 325px;
+		height: 335px;
 	}
 }
 /*----footer---*/
