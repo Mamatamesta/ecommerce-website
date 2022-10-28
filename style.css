@@ -204,7 +204,8 @@ button i {
 
 @media only screen and (max-width: 575px){
 	.img-flex{
-		display: block;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		padding-top: 30px;
 	}
 	
@@ -218,7 +219,7 @@ button i {
 	}
 	
 	.image-pro{
-		width: 40%;
+		width: 70%;
 		margin: auto;
 		margin-bottom: 20px;
 
@@ -289,14 +290,15 @@ button i {
 }
 @media only screen and (max-width: 575px){
 	.four-flex {
-		display: block;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		margin-top: 15px;
 	}
 	.section4{
 		height: auto;
 	}
 	.products-img{
-		width: 30%;
+		width: 70%;
 		margin: auto;
 	}
 	.products-img img {
@@ -373,6 +375,9 @@ button i {
 	      }
 	      .display-grid{
               grid-template-columns: repeat(2, 1fr);
+	      }
+	      .pro-img{
+	      	width: 70%;
 	      }
 }
 @media only screen and (max-width: 425px){
@@ -566,7 +571,8 @@ button i {
               	  height: auto;
               }
               .logo-flex{
-              	display: block;
+              	display: grid;
+              	grid-template-columns: repeat(2, 1fr);
               }
               .five-img{
               	margin: auto;
