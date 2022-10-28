@@ -314,7 +314,7 @@ button i {
 */
 .section5 {
 	width: 100%;
-	height: 650px;
+	height: 850px;
 	background: bisque;
  }
  .lat-pdroducts h1 {
@@ -335,9 +335,51 @@ button i {
  .lat-pdroducts h1:hover::after{
 	width: 10%;
 }
-/*@media only screen and(max-width: 575px){
-
-}*/
+.display-grid{
+	display: grid;
+    grid-template-columns:repeat(4, 1fr); 
+    grid-gap: 1px 1px;       
+}
+.four-img{
+     padding-top: 25px;
+}
+.pro-img{
+	width: 60%;
+	margin: auto;
+}
+.pro-img img {
+	width: 100%;
+	height: 260px;
+}
+.grid-item{
+	text-align: center;
+}
+.grid-item p{
+	color: gray;
+	padding-top: 10px;
+	font-weight: bold;
+}
+.grid-item i {
+	color: orangered;
+	padding-top: 8px;
+}
+.grid-item h3{
+	color: gray;
+	padding-top: 8px;
+}
+@media only screen and (max-width: 575px){
+	      .section5{
+	      	height: auto;
+	      }
+	      .display-grid{
+              grid-template-columns: repeat(2, 1fr);
+	      }
+}
+@media only screen and (max-width: 425px){
+	       .pro-img img{
+	       	     height: auto;
+	       }
+}
 
 /*<!--  ----sec-six---- -->
 */
@@ -425,7 +467,7 @@ button i {
 .section-seven{
 	width: 100%;
 	height: 650px;
-	background: bisque;
+	background: #fff;
 }
 .three-hover {
 	display: flex;
@@ -536,7 +578,7 @@ button i {
               }
               .fir-hover{
                   margin: auto;
-                  width: 45%;
+                  width: 75%;
                   height: auto;
                   margin-bottom: 30px;
 
@@ -546,7 +588,7 @@ button i {
               }
               .sec-hover{
                   margin: auto;
-                  width: 45%;
+                  width: 75%;
                   height: auto;
                   margin-bottom: 30px;
               }
@@ -555,7 +597,7 @@ button i {
               }
               .thir-hover{
                   margin: auto;
-                  width: 45%;
+                  width: 75%;
                   height: auto;
 
               }
@@ -565,36 +607,31 @@ button i {
               .lorem p{
               	font-size: 12px;
               }
+              .hu-icon i{
+              	font-size: 20px;
+              	margin-top: 10px;
+              }
+              .profile img{
+              	height: 45px;
+              }
 
 
 }
 
-/*@media only screen and (max-width: 768px){
+@media only screen and (max-width: 425px){
 	.fir-hover{
-		width: 100%;
-		height: 343px;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
 	}
 	.sec-hover{
-		column-: 100%;
-	     height: 343px;
+		width: 90%;
+		margin: auto;
+		margin-bottom: 20px;
 	}
 	.thir-hover{
-		width: 100%;
-		height: 343px;
-	}
-}*/
-@media only screen and (max-width: 320px){
-	.fir-hover{
-		   width: 80%;
-           
-	}
-	.sec-hover{
-		width: 80%;
-		
-	}
-	.thir-hover{
-		width: 80%;
-		
+		width: 90%;
+		margin: auto;
 	}
 }
 
